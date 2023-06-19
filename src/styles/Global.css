@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: var(--white);
+    background-color: var(--black1);
 }
 
 
 body {
-    font-family: 'DM Sans', 'Inter', 'Roboto' sans-serif;
+    font-family: 'Inter', 'DM Sans', 'Roboto' sans-serif;
 }
 
 :root {
