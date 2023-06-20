@@ -1,27 +1,86 @@
-nav {
+header {
     width: 100%;
     height: 80px;
-    background-color: var(--black3);
-    display: inline-block;
+    background-color: var(--black1);
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+
 }
 
-nav div {
+button {
+    float: right;
+    height: 100%;
     text-decoration: none;
+    border: none;
+    display: none;
+
+}
+
+div img {
+    width: 232px;
+    margin-top: 20px;
+}
+
+header div {
     float: left;
     align-items: center;
+    height: 100%;
 }
 
-nav ul {
+header nav {
     text-decoration: none;
     float: right;
-    align-items: center;
-    margin: auto;
+    height: 100%;
+
 
 }
 
-nav ul li {
+header nav a {
+    color: var(--gray1);
+    margin-top: 30px;
     display: inline-block;
-    padding: 10px;
+    padding-inline: 30px
+}
 
+header nav a:hover {
+    color: var(--gray2);
+    cursor: pointer
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    header nav {
+        display: none;
+    }
+
+    button {
+        display: block;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .mobile a {
+        margin: auto;
+        border-top: 1px var(--gray1) solid;
+        border-bottom: 1px var(--gray1) solid;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .mobile a:hover {
+        color: var(--gray1);
+        cursor: pointer;
+
+    }
 }
