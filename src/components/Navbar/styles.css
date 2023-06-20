@@ -5,6 +5,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
 
 }
 
@@ -14,12 +16,13 @@ button {
     text-decoration: none;
     border: none;
     display: none;
-
+    margin-right: 10px;
 }
 
 div img {
     width: 232px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 header div {
