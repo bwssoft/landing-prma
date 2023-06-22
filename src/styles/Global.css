@@ -4,7 +4,9 @@
     text-decoration: none;
     color: var(--white);
     background-color: var(--black1);
-}   
+    /* // min-width: 100vh; */
+    /* min-height: 100vh; */
+}
 
 
 body {
