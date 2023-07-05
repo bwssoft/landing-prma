@@ -1,8 +1,7 @@
+"use client";
 import React, { useState } from "react";
-
 import "./styles.css";
 
-import logo from "../../assets/prma_white_label.png";
 
 import { HamburgerButton } from "@icon-park/react";
 
@@ -35,7 +34,7 @@ const Navbar: React.FC = () => {
     <>
       <header>
         <div>
-          <img src={logo} />
+          <img src="./assets/prma_white_label.png" />
         </div>
         <nav>
           <a className="active">Inicio</a>

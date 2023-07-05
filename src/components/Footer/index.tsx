@@ -1,14 +1,17 @@
+"use client";
 import React from "react";
-
+import Image from "next/image";
 import "./styles.css";
-import logo from "../../assets/prma_white_label.png";
+import logo from "./assets/prma_white_label.png";
 import whatappIcon from "../../assets/whatsapp.png";
 import { PhoneTwo, LocalTwo } from "@icon-park/react";
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className="section1">
-        <img src={logo} />
+        <img
+          width={240}        
+        src="./assets/prma_white_label.png" />
         <div>
           <div>Soluções rápidas e efetivas na área de segurança.</div>
           <div>

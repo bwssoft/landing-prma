@@ -1,0 +1,48 @@
+.container {
+
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+    background: transparent;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.container * {
+    background: inherit;
+}
+.containerText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerText p {
+    margin-top: 15px;
+}
+
+.imageContainer {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer img {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.containerButtons {
+    margin: auto;
+    display: flex;
+    width: 50;
+
+}

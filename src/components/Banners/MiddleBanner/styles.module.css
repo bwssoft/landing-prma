@@ -1,0 +1,38 @@
+.container {
+
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.containerText {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.containerText p {
+    margin-top: 15px;
+}
+
+.imageContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+}

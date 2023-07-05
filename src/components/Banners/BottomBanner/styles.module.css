@@ -1,0 +1,31 @@
+.container {
+
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: var(--gray2);
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container * {
+    background: inherit;
+}
+
+.labelContainer button {
+    margin-top: 20px;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: max-content;
+}

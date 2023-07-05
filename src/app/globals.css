@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--black1);
+
+
+}
+
+
+body {
+  font-family: 'Inter', 'DM Sans', 'Roboto' sans-serif;
+  background-image: url(../../public/assets/backgroundbackground.png) !important;
+  
+  background-size: contain;
+  background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+:root {
+  --orange: #FF8F01;
+  --white: #EBEBEB;
+  --gray1: #B8B8B8;
+  --gray2: #525252;
+  --black1: #191919;
+  --black2: #242424;
+  --black3: #292828;
+  --green: #47D444;
+}

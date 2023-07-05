@@ -1,0 +1,29 @@
+.containerCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    flex-wrap: wrap;
+    border-right: 0.1em var(--gray1) solid;
+    border-bottom: 1px var(--gray1) solid;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.containerCards:hover {
+    border: var(--black3);
+}
+
+
+.containerCards div {}
+
+.containerCards div img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: var(--black2);
+    border-radius: 10px;
+    padding: 20px;
+}

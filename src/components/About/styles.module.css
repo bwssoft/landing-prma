@@ -1,0 +1,51 @@
+.container {
+
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../public/assets/logo-img\ 1\ \(Traced\)prma_logo.png");
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.textContainer hr {
+    margin-block: 10px;
+    border-color: var(--orange);
+
+}
+
+.textContainer div {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.container div {}
+
+.listContainer ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.listContainer ul li {
+    padding: 20px;
+    margin: 10px;
+}
+
+.listContainer ul li::before {
+    color: var(--orange);
+}
