@@ -1,0 +1,17 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    max-width: 900px;
+    
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

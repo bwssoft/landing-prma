@@ -1,11 +1,73 @@
-.conatainer {
-    width: clamp(50%, 700px, 90%);
-    height: min(50%, 300px);
+.container {
+   padding: 30px;
+}
 
-    margin: auto;
-    padding: 0 2rem;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.containerHeader {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.header img {
+   width: 64px;
+   margin: auto;
+   padding: 10px;
+   background-color: var(--black2);
+}
+
+.header :last-child {
+   font-size: 36px;
+   margin-left: 10px;
+}
+
+.close {
+   cursor: pointer;
+   justify-content: end;
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+.containerText {
+   margin-top: 30px;
+}
+
+.containerIcons {
+   display: flex;
+}
+
+.containerImg {
+   width: 300px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   max-width: 400px;
+   margin-top: 20px;
+}
+
+.containerImg :first-child {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--black2);
+   padding: 5px;
+}
+
+.containerImg :last-child {
+   margin: 5px;
+}
+
+.containerIcons {
+   width: fit-content;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
 }

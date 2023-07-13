@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   BatteryWorking,
   Report,
@@ -34,39 +34,39 @@ export const cardsData = [
       icons: [
         {
           name: "Carga de bateria",
-          icon: <BatteryWorking />,
+          icon: <BatteryWorking size={42} color="#525252"/>,
         },
         {
           name: "Alerta de violação do painel",
-          icon: <Report />,
+          icon: <Report size={42} />,
         },
         {
           name: "Equipamento sem comunicação",
-          icon: <MessageFailed />,
+          icon: <MessageFailed size={42} />,
         },
         {
           name: "Bateria violada",
-          icon: <BatteryCharge />,
+          icon: <BatteryCharge size={42} />,
         },
         {
           name: "Aleta de violação de painel",
-          icon: <PaintedScreen />,
+          icon: <PaintedScreen size={42} />,
         },
         {
           name: "Saída de cerca não autorizada",
-          icon: <Local />,
+          icon: <Local size={42} />,
         },
         {
           name: "Acionamento de botão de pânico",
-          icon: <PointOut />,
+          icon: <PointOut size={42} />,
         },
         {
           name: "Acionamento de botão de pânico",
-          icon: <Caution />,
+          icon: <Caution size={42} />,
         },
         {
           name: "Bloqueio",
-          icon: <AngryFace />,
+          icon: <AngryFace size={42} />,
         },
       ],
     },
@@ -80,15 +80,15 @@ export const cardsData = [
       icons: [
         {
           name: "Recuperação em caso de roubo e furto",
-          icon: <Refresh />,
+          icon: <Refresh size={42} />,
         },
         {
           name: "Sindicância",
-          icon: <FileFocus  />,
+          icon: <FileFocus size={42} />,
         },
         {
           name: "Axílio Jurídico",
-          icon: <BalanceTwo />,
+          icon: <BalanceTwo size={42} />,
         },
       ],
     },
@@ -102,15 +102,15 @@ export const cardsData = [
       icons: [
         {
           name: "Vistoria de disparos de alarmes",
-          icon: <Alarm />,
+          icon: <Alarm size={42} />,
         },
         {
           name: "Vistoria de disparos de alarmes",
-          icon: <Car />,
+          icon: <Car size={42} />,
         },
         {
           name: "Preservação",
-          icon: <GoodOne />,
+          icon: <GoodOne size={42} />,
         },
       ],
     },
@@ -124,31 +124,31 @@ export const cardsData = [
       icons: [
         {
           name: "Assistência mecânica e elétrica",
-          icon: <Tool />,
+          icon: <Tool size={42} />,
         },
         {
           name: "Remoção",
-          icon: <ArrowLeft />,
+          icon: <ArrowLeft size={42} />,
         },
         {
           name: "Carga de bateria",
-          icon: <BatteryWorking />,
+          icon: <BatteryWorking size={42} />,
         },
         {
           name: "Troca de pneus",
-          icon: <Round />,
+          icon: <Round size={42} />,
         },
         {
           name: "Combustível",
-          icon: <WaterLevel />,
+          icon: <WaterLevel size={42} />,
         },
         {
           name: "Veículo reserva",
-          icon: <Car />,
+          icon: <Car size={42} />,
         },
         {
           name: "MTA - Meio de transporte alternativo",
-          icon: <Car />,
+          icon: <Car size={42} />,
         },
       ],
     },
@@ -162,19 +162,19 @@ export const cardsData = [
       icons: [
         {
           name: "Atuação em demandas jurídicas",
-          icon: <GoodOne />,
+          icon: <GoodOne size={42} />,
         },
         {
           name: "Acompanhamento de Inquérido policial",
-          icon: <Eyes />,
+          icon: <Eyes size={42} />,
         },
         {
           name: "Elaboração de contratos",
-          icon: <FileAddition />,
+          icon: <FileAddition size={42} />,
         },
         {
           name: "Adequação à LGPD",
-          icon: <Lock />,
+          icon: <Lock size={42} />,
         },
       ],
     },

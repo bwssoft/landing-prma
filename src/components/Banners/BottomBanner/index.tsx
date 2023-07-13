@@ -7,7 +7,12 @@ import Button from "@/components/Buttons/Button";
 
 const BottomBanner: React.FC = () => {
   return (
-    <motion.div className={styles.container}>
+    <motion.div
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ ease: "linear", duration: 1 }}
+      className={styles.container}
+    >
       <div className={styles.labelContainer}>
         <motion.div>
           <h2>Esteja seguro. Venha conosco.</h2>

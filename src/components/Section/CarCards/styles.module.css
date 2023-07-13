@@ -1,0 +1,38 @@
+.container {
+
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.containerHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerHeader :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.containerHeader img{
+
+    width: 64px;
+    margin-right: 20px;
+}
+
+.containerCards{
+width: 64px;
+    display: flex;
+}

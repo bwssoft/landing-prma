@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 interface BackdropProps {
   children: ReactNode;
-  onClick: () => {};
+  onClick: () => void;
 }
 const Backdrop: React.FC<BackdropProps> = ({ children, onClick }) => {
   return (

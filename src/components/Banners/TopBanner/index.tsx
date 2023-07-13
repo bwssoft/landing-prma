@@ -9,8 +9,9 @@ const TopBanner: React.FC = () => {
   return (
     <motion.div
       className={styles.container}
-    initial={{ x: 30}}
-      animate={{ x: 0 }}
+      initial={{ x: 30 }}
+      whileInView={{ x: 0 }}
+      
       transition={{ ease: "easeOut", duration: 1 }}
     >
       <div className={styles.containerText}>

@@ -1,0 +1,51 @@
+.container {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+    background: transparent;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background-image: url(../../../../public/assets/backgroundbackground.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container div {
+    background: transparent;
+
+}
+
+.CheckContainer {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.DownloadContainer {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.DownloadContainer p {
+    margin-top: 20px;
+}
+
+.phoneContainer img {
+    width: 300px;
+}
+
+.labels img {
+    width: 32px;
+}
+
+.labels img {
+    width: 32px;
+}

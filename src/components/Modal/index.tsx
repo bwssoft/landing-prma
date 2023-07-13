@@ -1,40 +1,64 @@
 import React, { ReactNode } from "react";
-import Backdrop from "../Backdrop";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
+import { Close } from "@icon-park/react";
+
 interface ModalProps {
-  children: ReactNode;
-  handleClose: () => {};
+  title?: string;
+  icon?: string;
+  text?: string;
+  icons?: Array<{ icon: ReactNode; name: string }>;
 }
 
-const dropIn = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
+const container = {
+  hidden: { opacity: 1, scale: 0 },
   visible: {
-    y: "-100vh",
     opacity: 1,
-    damping: 0,
-    stiffnes: 500,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
   },
-  exit: { y: "-100vh", opacity: 0 },
 };
-const Modal: React.FC<ModalProps> = ({ handleClose }) => {
+
+const data = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+const Modal: React.FC<ModalProps> = ({ title, icon, text, icons }) => {
   return (
-    <Backdrop onClick={handleClose} key={""}>
-      <motion.div
-        className={styles.container}
-        onClick={(e) => e.stopPropagation()}
-        variants={dropIn}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-      >
-        <p>BATATATATATATATTATATATTATATta</p>
-        <button onClick={handleClose}>Close</button>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView={"visible"}
+      className={styles.container}
+    >
+      <motion.div className={styles.containerHeader}>
+        <motion.div className={styles.close}>
+          <Close />
+        </motion.div>
+        <motion.div className={styles.header}>
+          <motion.div>
+            <motion.img src={icon} />
+          </motion.div>
+          <div>{title}</div>
+        </motion.div>
       </motion.div>
-    </Backdrop>
+      <motion.div className={styles.containerText}>{text}</motion.div>
+      <motion.div className={styles.containerIcons}>
+        {icons?.map((item) => (
+          <motion.div variants={data} className={styles.containerImg}>
+            <motion.div>{item.icon}</motion.div>
+            <motion.div>{item.name}</motion.div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </motion.div>
   );
 };
 
