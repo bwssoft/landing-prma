@@ -51,8 +51,12 @@ const Modal: React.FC<ModalProps> = ({ title, icon, text, icons }) => {
       </motion.div>
       <motion.div className={styles.containerText}>{text}</motion.div>
       <motion.div className={styles.containerIcons}>
-        {icons?.map((item) => (
-          <motion.div variants={data} className={styles.containerImg}>
+        {icons?.map((item, index) => (
+          <motion.div
+            key={index}
+            variants={data}
+            className={styles.containerImg}
+          >
             <motion.div>{item.icon}</motion.div>
             <motion.div>{item.name}</motion.div>
           </motion.div>
