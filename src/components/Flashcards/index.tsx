@@ -1,4 +1,6 @@
 "use client"
+
+// @ts-ignore 
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from "./styles.module.css"
